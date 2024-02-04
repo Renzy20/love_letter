@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #e74c3c;
+            height: 100vh;
+            margin: 0;
+        }
+
+        #love-letter {
+            text-align: center;
+            max-width: 400px;
+            padding: 10px;
+            background-color: #424242;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(126, 62, 245, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        #message-box {
+            margin-bottom: 20px;
+            display: none;
+            transition: all 0.2s ease;
+        }
+
+        #heart-button {
+            cursor: pointer;
+            font-size: 24px;
+            color: #e74c3c;
+            transition: all 0.3s ease;
+        }
+
+        p {
+            color: antiquewhite;
+            margin-top: 0; 
+            text-align: left; 
+        }
+    </style>
+</head>
+<body>
+    <div id="love-letter">
+        <div id="message-box">
+            <p> My Love,
+                <br />
+                <br />
+                In your eyes, I found my home. Your laughter is my favorite melody, and your love is the anchor that steadies me. Thank you for being my confidant, my joy, and my best adventure. With you, every moment is a treasure, and every day is a gift. I love you more than words can express.
+            </p>
+        </div>
+        <div id="heart-button" onclick="showLove()">
+            ❤️
+        </div>
+    </div>
+
+    <script>
+        function showLove() {
+            var heartButton = document.getElementById('heart-button');
+            var messageBox = document.getElementById('message-box');
+
+            heartButton.style.transform = 'translateY(50px)';
+            messageBox.style.display = 'block';
+            messageBox.style.transform = 'translateY(50px)';
+        }
+    </script>
+</body>
+</html>
